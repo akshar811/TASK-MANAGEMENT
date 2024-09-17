@@ -19,7 +19,7 @@ app.use("/user", Route);
 app.use("/product", TaskRoute);
 
 app.get("/", (req, res) => {
-    res.send("Welcome to the Task Management App");
+    res.redirect("/user/signup");
   });
 
 app.listen(process.env.PORT, () => {
